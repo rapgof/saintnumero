@@ -1,0 +1,115 @@
+<!-- Создаем таблицу Пифагора на Тильда -->
+ <!-- https://youx.agency/tablica-pifagora-psiho -->
+
+<div class='square'>
+                <div>
+                    <div>
+                        <div class='tn-atom tn-atom__html'>
+                            <div class="form_wr">
+                                <div class="req">Введите Вашу дату рождения:</div>
+                                <input type="text" id="matrix_date" maxlength="10" class="form" title="Введите в это поле Вашу дату рождения в формате: ДД.ММ.ГГГГ" placeholder="Ваша дата рождения в формате ДД.ММ.ГГГГ">
+                                <button class="calc" style="line-height:30px">
+                                    Рассчитать психоматрицу
+                                </button>
+                            </div>
+                            <table class="greyGridTable">
+                                <tbody>
+                                    <tr>
+                                        <td class="grey first" align="left" colspan="3">
+                                            <div> Дата рождения: <span data-answer=date></span> </div>
+                                            <div class="mt10"> Доп. числа: <span data-answer=second-number></span> </div>
+                                            <div class="mt10"> Число судьбы: <span data-answer=destiny-number></span> </div>
+                                        </td>
+                                        <td class="grey">
+                                            <div class="title">Темперамент</div>
+                                            <div class="value" data-index="9"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="title">Характер</div>
+                                            <div class="value" data-index="0"></div>
+                                        </td>
+                                        <td>
+                                            <div class="title">Здоровье</div>
+                                            <div class="value" data-index="3"></div>
+                                        </td>
+                                        <td>
+                                            <div class="title">Удача</div>
+                                            <div class="value" data-index="6"></div>
+                                        </td>
+                                        <td class="grey">
+                                            <div class="title">Цель</div>
+                                            <div class="value" data-index="12"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="title">Энергия</div>
+                                            <div class="value" data-index="1"></div>
+                                        </td>
+                                        <td>
+                                            <div class="title">Логика</div>
+                                            <div class="value" data-index="4"></div>
+                                        </td>
+                                        <td>
+                                            <div class="title">Долг</div>
+                                            <div class="value" data-index="7"></div>
+                                        </td>
+                                        <td class="grey">
+                                            <div class="title">Семья</div>
+                                            <div class="value" data-index="11"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="title">Интерес</div>
+                                            <div class="value" data-index="2"></div>
+                                        </td>
+                                        <td>
+                                            <div class="title">Труд</div>
+                                            <div class="value" data-index="5"></div>
+                                        </td>
+                                        <td>
+                                            <div class="title">Память</div>
+                                            <div class="value" data-index="8"></div>
+                                        </td>
+                                        <td class="grey">
+                                            <div class="title">Привычки</div>
+                                            <div class="value" data-index="13"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 0;"></td>
+                                        <td>
+                                            <div class="title">Быт</div>
+                                            <div class="value" data-index="10"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <input type="text" id="matrix_text" placeholder="После расчета здесь будут Ваши данные для копирования">
+                            <button class="copy">Скопировать данные</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="js/matrix_obfus.js"></script>
+
+<script>
+    $(document).ready(function(){
+    $('.modalDialog').click(function () {
+    $(".modalDialog").addClass('hidemodal');
+    });
+});
+    </script>
+<script>
+    $(document).ready(function(){
+    $('.close').click(function () {
+    $(".modalDialog").addClass('hidemodal');
+    });
+});
+    </script>
